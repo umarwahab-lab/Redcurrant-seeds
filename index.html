@@ -4,70 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redcurrant Seeds – Planting & Care Guide</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
+            background: linear-gradient(to bottom right, #fff5f5, #fce4ec);
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden;
         }
+
         header {
             background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Ribes_rubrum_closeup.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 90px 20px;
+            animation: fadeIn 1.5s ease-in-out;
         }
+
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
         }
+
         header p {
             font-size: 1.2em;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
+
         .container {
             max-width: 900px;
             margin: auto;
             padding: 20px;
         }
-        .info, .instructions, .care, .facts {
+
+        .section {
             background: white;
             padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            animation: fadeUp 1s ease forwards;
+            opacity: 0;
         }
+
+        .section:nth-child(1) { animation-delay: 0.2s; }
+        .section:nth-child(2) { animation-delay: 0.4s; }
+        .section:nth-child(3) { animation-delay: 0.6s; }
+        .section:nth-child(4) { animation-delay: 0.8s; }
+        .section:nth-child(5) { animation-delay: 1s; }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 10px 0;
         }
+
         th, td {
             padding: 10px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #eee;
         }
+
         th {
             text-align: left;
-            background-color: #f8f8f8;
+            background-color: #fff0f3;
+            color: #b71c1c;
         }
+
+        table tr:hover {
+            background-color: #fff8f9;
+        }
+
         h2 {
             color: #b22222;
             margin-top: 0;
         }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        ul li:hover, ol li:hover {
+            background: #fff8f9;
+            border-radius: 6px;
+            padding: 5px;
+            transition: background 0.3s ease;
+        }
+
         footer {
             text-align: center;
             padding: 15px;
             background-color: #b22222;
             color: white;
             font-size: 0.9em;
+            letter-spacing: 0.5px;
         }
+
         img {
             max-width: 100%;
             border-radius: 8px;
             margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -80,14 +138,14 @@
 
 <div class="container">
 
-    <div class="info">
+    <div class="section">
         <h2>Seed Details</h2>
         <p><strong>Collection Date:</strong> 10 July 2025</p>
         <p><strong>Source:</strong> Fresh fruit bought from Lidl, Austria</p>
         <p><strong>Storage Advice:</strong> Keep seeds in a cool, dry place away from direct sunlight. Use within 1 year for best germination results.</p>
     </div>
 
-    <div class="facts">
+    <div class="section">
         <h2>Quick Facts</h2>
         <table>
             <tr><th>Scientific Name</th><td>Ribes rubrum</td></tr>
@@ -100,7 +158,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Ribes_rubrum.jpg" alt="Redcurrant Fruit">
     </div>
 
-    <div class="instructions">
+    <div class="section">
         <h2>Planting Instructions</h2>
         <ol>
             <li><strong>Cold Stratification:</strong> Redcurrant seeds require a chilling period. Place seeds in moist sand inside a sealed bag and refrigerate for 3 months.</li>
@@ -111,7 +169,7 @@
         </ol>
     </div>
 
-    <div class="care">
+    <div class="section">
         <h2>Care & Maintenance</h2>
         <ul>
             <li><strong>Sunlight:</strong> Full sun to partial shade.</li>
@@ -122,7 +180,7 @@
         </ul>
     </div>
 
-    <div class="facts">
+    <div class="section">
         <h2>Fun Fact</h2>
         <p>Redcurrants have been cultivated in Europe for centuries, and in medieval times, they were valued not only for their taste but also for their medicinal properties, often used to soothe fevers.</p>
     </div>
